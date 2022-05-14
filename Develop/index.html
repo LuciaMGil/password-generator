@@ -12,10 +12,25 @@
       <header>
         <h1>Password Generator</h1>
       </header>
+    
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+        <div class="form">
+            <label for="numChar">Number of Characters (between 8 and 128):</label>
+            <input type="number" id="numChar" name="numChar" min="8" max="128">
+            <br>
+            <h3>Add extra characters?</h3>
+            <input type="checkbox" id="upper" name="upper" value="upper">
+            <label for="upper"> Uppercase</label><br>
+            <input type="checkbox" id="num" name="num" value="num">
+            <label for="num"> Numbers</label><br>
+            <input type="checkbox" id="special" name="special" value="special">
+            <label for="special"> Special Characters</label><br>
+        
+        </div>
+
         <div class="card-body">
           <textarea
             readonly
