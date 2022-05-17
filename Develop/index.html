@@ -17,6 +17,8 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+        <br>
+        <!-- Form with line to select number of characters and checkboxes -->
         <div class="form">
             <label for="numChar">Number of Characters (between 8 and 128):</label>
             <input type="number" id="numChar" name="numChar" min="8" max="128">
@@ -30,7 +32,12 @@
             <label for="special"> Special Characters</label><br>
         
         </div>
-
+        <br>
+        <!-- Generate Password Button -->
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+        <!-- Password is displayed -->
         <div class="card-body">
           <textarea
             readonly
@@ -38,9 +45,6 @@
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
     </div>

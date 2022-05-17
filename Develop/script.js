@@ -4,7 +4,9 @@ var uppercaseCheckbox = document.getElementById("upper");
 var numCheckbox = document.getElementById("num");
 var specialCheckbox = document.getElementById("special");
 var password = "";
+
 // Write password to the #password input
+// Grabs the character length and runs a loop for the length and then puts the password on the page
 function writePassword() {
     password = "";
     var passwordLength = document.querySelector("#numChar").value;
@@ -17,6 +19,7 @@ function writePassword() {
     passwordText.value = password.substr(0, passwordLength).split('').sort(function () { return 0.5 - Math.random() }).join('');
 }
 
+// Randomizes the password according to which box is checked
 function characterRandomizer() {
     password += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 
